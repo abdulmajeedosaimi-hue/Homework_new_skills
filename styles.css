@@ -1,0 +1,114 @@
+.recipe {
+    width: 400px;
+    background-color: #fdf8f5;
+    padding: 30px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    margin: 40px;
+}
+
+.recipe h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.recipe h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.recipe p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content-box,
+.border-box {
+    width: 300px;
+    padding: 30px;
+    border: 8px solid #333;
+    background-color: #e6ffe6;
+    margin: 20px;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.list {
+    list-style: none;
+    width: 700px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.item {
+    width: 50%;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+.membership-card {
+    width: 350px;
+    padding: 35px;
+    margin: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.membership-card h2,
+.membership-card .price,
+.membership-card p,
+.membership-card ul {
+    margin-bottom: 20px;
+}
+
+#task-5-margin-collapse-siblings .parent {
+    width: 300px;
+    background-color: lightblue;
+}
+
+.first-box {
+    height: 100px;
+    background-color: tomato;
+    margin-bottom: 50px;
+}
+
+.second-box {
+    height: 100px;
+    background-color: lightgreen;
+    margin-top: 30px;
+}
+
+#task-6-margin-collapse-parent .parent {
+    width: 300px;
+    height: 200px;
+    background: lightblue;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    margin-top: 50px;
+}
