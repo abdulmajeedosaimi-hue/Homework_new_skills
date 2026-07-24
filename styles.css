@@ -1,114 +1,165 @@
 .recipe {
-    width: 400px;
-    background-color: #fdf8f5;
-    padding: 30px;
-    border: 2px solid #e0e0e0;
-    border-radius: 12px;
-    margin: 40px;
+  display: block;
+  width: 450px;
+  background-color: #fdf8f5;
+  padding: 30px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  margin: 0 auto;
 }
 
 .recipe h1 {
-    margin-bottom: 20px;
-    font-size: 28px;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
 .recipe h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
 
 .recipe p {
-    margin-bottom: 20px;
-    line-height: 1.6;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
-
+#card-image {
+  display: block;
+  width: 100%;
+}
+.btn.btn-save {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  /* inline elements, 
+  which ignore width and vertical spacing,
+  setting the display to inline-block 
+  (or block) enables 
+  the full CSS Box Model.
+  This allows the element 
+  to respect width, height,
+  margin, and padding properties. */
+}
+.actions {
+  display: inline-block;
+  padding: 10px;
+  background: darkblue;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-right: 15px;
+}
 .btn {
-    padding: 12px 24px;
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: inline-block;
+
+  padding: 12px 24px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+
+  width: 180;
 }
 
 .content-box,
 .border-box {
-    width: 300px;
-    padding: 30px;
-    border: 8px solid #333;
-    background-color: #e6ffe6;
-    margin: 20px;
+  width: 300px;
+  padding: 30px;
+  border: 8px solid #333;
+  background-color: #e6ffe6;
+  margin: 20px;
 }
 
 .content-box {
-    box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .border-box {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .list {
-    list-style: none;
-    width: 700px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin: 20px 0;
+  list-style: none;
+  width: 500px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
 }
 
 .item {
-    width: 50%;
-    padding: 15px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    margin-bottom: 10px;
+  display: inline-flex;
+  justify-content: center;
+  width: 150%;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  margin: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.task-4-membership,
+.plan-description,
+.ul {
+  /* display:none;  */
+  display: block;
 }
 
 .membership-card {
-    width: 350px;
-    padding: 35px;
-    margin: 40px;
-    border: 1px solid #eaeaea;
-    border-radius: 15px;
-    background-color: #ffffff;
+  width: 350px;
+  padding: 35px;
+  margin: 40px;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 
 .membership-card h2,
 .membership-card .price,
 .membership-card p,
-.membership-card ul {
-    margin-bottom: 20px;
+.membership-card ul,
+.membership-card button {
+  margin-bottom: 0px;
 }
-
+.btn.btn-join {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 50px;
+  background: darkblue;
+}
 #task-5-margin-collapse-siblings .parent {
-    width: 300px;
-    background-color: lightblue;
+  width: 300px;
+  background-color: lightblue;
 }
 
 .first-box {
-    height: 100px;
-    background-color: tomato;
-    margin-bottom: 50px;
+  height: 100px;
+  background-color: tomato;
+  margin-bottom: 50px;
 }
 
 .second-box {
-    height: 100px;
-    background-color: lightgreen;
-    margin-top: 30px;
+  height: 100px;
+  background-color: lightgreen;
+  margin-top: 30px;
 }
 
 #task-6-margin-collapse-parent .parent {
-    width: 300px;
-    height: 200px;
-    background: lightblue;
+  width: 300px;
+  height: 200px;
+  background: lightblue;
 }
 
 .child {
-    width: 100px;
-    height: 100px;
-    background: pink;
-    margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  background: pink;
+  margin-top: 50px;
 }

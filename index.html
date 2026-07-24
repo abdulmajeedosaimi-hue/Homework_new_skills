@@ -1,111 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework - CSS Box Model</title>
 
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQx/38Oa4mUu1bC3eUeTqSXXs2zGz2uV/A/2m09Fv/XwzK9aN27c/OQk0wXmO2A9cM32qg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <main id="homework-container">
+      <section id="task-1-recipe" class="recipe">
+        <h1 class="recipe-title">Chocolate Cake Recipe</h1>
 
+        <p class="recipe-description">
+          A simple and delicious dessert that everyone will enjoy.
+        </p>
 
-        <section id="task-1-recipe" class="recipe">
-            <h1 class="recipe-title">Chocolate Cake Recipe</h1>
-            
-            <p class="recipe-description">
-                A simple and delicious dessert that everyone will enjoy.
-            </p>
-            
-            <h2 class="recipe-subtitle">Ingredients</h2>
-            <ul class="recipe-ingredients-list">
-                <li class="ingredient-item">Flour</li>
-                <li class="ingredient-item">Sugar</li>
-                <li class="ingredient-item">Chocolate</li>
-                <li class="ingredient-item">Eggs</li>
-            </ul>
-            
-            <h2 class="recipe-subtitle">Preparation Steps</h2>
-            <ol class="recipe-preparation-list">
-                <li class="step-item">Mix all ingredients together.</li>
-                <li class="step-item">Bake the cake for 40 minutes.</li>
-                <li class="step-item">Let it cool before serving.</li>
-            </ol>
-            
-            <button class="btn btn-save" type="button">
-                Save Recipe
-            </button>
-        </section>
+        <h2 class="recipe-subtitle">Ingredients</h2>
+        <ul class="recipe-ingredients-list">
+          <li class="ingredient-item">Flour</li>
+          <li class="ingredient-item">Sugar</li>
+          <li class="ingredient-item">Chocolate</li>
+          <li class="ingredient-item">Eggs</li>
+        </ul>
 
-        <section id="task-2-box-sizing">
-            <div class="content-box">
-                Content Box
-            </div>
-            
-            <div class="border-box">
-                Border Box
-            </div>
-        </section>
+        <span
+          ><img id="card-image" src="F5F.svg" alt="remmoved-gap--image" />
+        </span>
+        <h2 class="recipe-subtitle">Preparation Steps</h2>
+        <ol class="recipe-preparation-list">
+          <li class="step-item">Mix all ingredients together.</li>
+          <li class="step-item">Bake the cake for 40 minutes.</li>
+          <li class="step-item">Let it cool before serving.</li>
+        </ol>
 
+        <button class="btn btn-save" type="button">Save Recipe</button>
+        <div class="actions">
+          <a href="#">Print</a>
+          <a href="#">Share</a>
+          <a href="#">Download</a>
+        </div>
+      </section>
 
-        <section id="task-3-percentage-width">
-            <ul class="list">
-                <li class="item">HTML</li>
-                <li class="item">CSS</li>
-                <li class="item">javascript</li>
-                <li class="item">typescript</li>
-            </ul>
-        </section>
+      <section id="task-2-box-sizing">
+        <div class="content-box">Content Box</div>
 
-        <section id="task-4-membership" class="membership-card">
-            <h2 class="plan-title">Premium Plan</h2>
-            
-            <p class="price plan-price">
-                $49/month
-            </p>
-            
-            <p class="plan-description">
-                Full gym access, fitness classes, and personal training support.
-            </p>
-            
-            <ul class="plan-features-list">
-                <li class="feature-item">Gym equipment access</li>
-                <li class="feature-item">Group classes</li>
-                <li class="feature-item">Workout plan</li>
-                <li class="feature-item">Nutrition tips</li>
-            </ul>
-            
-            <button class="btn btn-join" type="button">
-                Join Now
-            </button>
-        </section>
+        <div class="border-box">Border Box</div>
+      </section>
 
-        <section id="task-5-margin-collapse-siblings">
-            <div class="parent">
-                <div class="first-box">
-                    First box
-                </div>
-                
-                <div class="second-box">
-                    Second box
-                </div>
-            </div>
-        </section>
+      <section id="task-3-percentage-width">
+        <ul class="list">
+          <li class="item">HTML</li>
+          <li class="item">CSS</li>
+          <li class="item">javascript</li>
+          <li class="item">typescript</li>
+        </ul>
+      </section>
 
-        <section id="task-6-margin-collapse-parent">
-            <div class="parent">
-                <div class="child">
-                    Child element
-                </div>
-            </div>
-        </section>
+      <section id="task-4-membership" class="membership-card">
+        <h2 class="plan-title">Premium Plan</h2>
 
+        <p class="price plan-price">$49/month</p>
+
+        <p class="plan-description">
+          Full gym access, fitness classes, and personal training support.
+        </p>
+
+        <ul class="plan-features-list">
+          <li class="feature-item">Gym equipment access</li>
+          <li class="feature-item">Group classes</li>
+          <li class="feature-item">Workout plan</li>
+          <li class="feature-item">Nutrition tips</li>
+        </ul>
+
+        <button class="btn btn-join" type="button">Join Now</button>
+      </section>
+
+      <section id="task-5-margin-collapse-siblings">
+        <div class="parent">
+          <div class="first-box">First box</div>
+
+          <div class="second-box">Second box</div>
+        </div>
+      </section>
+
+      <section id="task-6-margin-collapse-parent">
+        <div class="parent">
+          <div class="child">Child element</div>
+        </div>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
