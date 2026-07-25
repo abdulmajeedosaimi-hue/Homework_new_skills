@@ -1,3 +1,79 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.card {
+  list-style: none;
+  width: auto;
+  padding: 20px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+.pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
 .recipe {
   display: block;
   width: 450px;
@@ -22,7 +98,7 @@
   margin-bottom: 20px;
   line-height: 1.6;
 }
-#card-image {
+.card-image {
   display: block;
   width: 100%;
 }

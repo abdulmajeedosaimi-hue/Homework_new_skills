@@ -12,7 +12,77 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="header">
+      <img class="logo-image" src="logo.svg" alt="header-logo-image" />
+      <a class="logo" href="#">TechStore</a>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
     <main id="homework-container">
+      <section>
+        <ul class="products">
+          <li class="card">
+            <h2>Laptop</h2>
+            <p>Powerful computer for work and study.</p>
+            <button>Buy</button>
+          </li>
+
+          <li class="card">
+            <h2>Phone</h2>
+            <p>Modern smartphone with a great camera.</p>
+            <button>Buy</button>
+          </li>
+
+          <li class="card">
+            <h2>Headphones</h2>
+            <p>Wireless headphones with clear sound.</p>
+            <button>Buy</button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div class="pricing">
+          <div class="pricing-card">
+            <h2>Basic</h2>
+            <p class="price">$10</p>
+            <ul class="features">
+              <li>1 User</li>
+              <li>5GB Storage</li>
+              <li>Basic Support</li>
+            </ul>
+            <button>Select Basic</button>
+          </div>
+
+          <div class="pricing-card">
+            <h2>Pro</h2>
+            <p class="price">$20</p>
+            <ul class="features">
+              <li>5 Users</li>
+              <li>50GB Storage</li>
+              <li>Priority Support</li>
+            </ul>
+            <button>Select Pro</button>
+          </div>
+
+          <div class="pricing-card">
+            <h2>Premium</h2>
+            <p class="price">$50</p>
+            <ul class="features">
+              <li>Unlimited Users</li>
+              <li>500GB Storage</li>
+              <li>24/7 Dedicated Support</li>
+            </ul>
+            <button>Select Premium</button>
+          </div>
+        </div>
+      </section>
       <section id="task-1-recipe" class="recipe">
         <h1 class="recipe-title">Chocolate Cake Recipe</h1>
 
@@ -28,9 +98,8 @@
           <li class="ingredient-item">Eggs</li>
         </ul>
 
-        <span
-          ><img id="card-image" src="F5F.svg" alt="remmoved-gap--image" />
-        </span>
+        <img class="card-image" src="F5F.svg" alt="remmoved-gap--image" />
+
         <h2 class="recipe-subtitle">Preparation Steps</h2>
         <ol class="recipe-preparation-list">
           <li class="step-item">Mix all ingredients together.</li>
