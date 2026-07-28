@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Example for Roboto Regular */
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("fonts/Roboto-Regular.woff2") format("woff2"),
+    url("fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Example for Mulish Regular */
+@font-face {
+  font-family: "Mulish";
+  src:
+    url("fonts/Mulish-Regular.woff2") format("woff2"),
+    url("fonts/Mulish-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* Colors */
+  --color-primary: #458ff6;
+  --color-heading: #462e6a;
+  --color-text: #7d7987;
+  --color-bg-light: #f7f9fc;
+  --color-white: #ffffff;
+
+  /* Gradients */
+  --gradient-blue: #6888c8;
+
+  /* Typography */
+  --font-primary: "Mulish", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+
+  /* Shadows & Radii */
+  --shadow-card: 10px 40px 50px rgba(228, 233, 245, 0.4);
+  --radius-card: 20px;
+  --radius-btn: 55px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-white);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 16px 40px;
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: var(--radius-btn);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background-color: #357ae8;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin: 0 auto;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__logo-img {
+  width: 50px;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-list__link {
+  font-size: 18px;
+  color: var(--color-text);
+  transition: color 0.3s;
+}
+
+.nav-list__link:hover,
+.nav-list__link--active {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.hero__content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero__title {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.hero__description {
+  font-family: var(--font-secondary);
+  font-size: 19px;
+  margin-bottom: 40px;
+}
+
+.hero__image-wrapper {
+  padding-left: 220px;
+}
+
+/* Services Section */
+.services {
+  padding: 2%;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services__header {
+  margin-bottom: 60px;
+  display: flex;
+  flex-basis: calc((100% - 20px) / 3);
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__title {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.services__description {
+  max-width: 800px;
+  font-size: 18px;
+}
+
+/*what is Grid grid for perfectly aligned cards> it like flex  */
+.services__grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 600px) / 3);
+
+  margin-bottom: 60px;
+}
+
+.service-card {
+  flex-basis: calc((100% - 600px) / 3);
+  background: var(--color-white);
+  padding: 40px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card__icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 24px;
+  flex-basis: calc((100% - 600px) / 3);
+  border-radius: 12px;
+}
+
+.service-card__title {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.service-card__description {
+  font-size: 16px;
+}
+
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.feature__image-wrapper {
+margin:left;
+}
+
+.feature__content {
+
+  max-width: 480px;
+}
+
+.feature__title {
+  margin:right;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.feature__description {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Footer Section */
+.footer {
+  background: var(--gradient-blue);
+  color: var(--color-white);
+  padding: 80px 10% 40px;
+  margin-top: 80px;
+}
+
+.footer__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer__brand-col {
+  max-width: 400px;
+}
+
+.footer__logo-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer__logo-img {
+  width: 41px;
+  height: 41px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+.footer__brand-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer__brand-description {
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__heading {
+  font-size: 20px;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__list a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s;
+}
+
+.footer__list a:hover {
+  color: var(--color-white);
+}
+

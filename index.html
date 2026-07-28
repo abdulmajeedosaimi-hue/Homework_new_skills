@@ -3,165 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework - CSS Box Model</title>
+    <link rel="stylesheet" href="styless.css" />
+    <title>Saviour Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <img class="logo-image" src="logo.svg" alt="header-logo-image" />
-      <a class="logo" href="#">TechStore</a>
-
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contacts</a></li>
+    <header class="header" id="header">
+      <div class="header__brand">
+        <img src="logo.svg" alt="Saviour Care Logo" class="header__logo-img" />
+        <span class="header__title">Saviour Care</span>
+      </div>
+      <nav class="header__nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="#footer" class="nav-list__home nav-list__link--active"
+              >Home</a
+            >
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__find">Find a doctor</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__apps">Apps</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__review">Testimonials</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__about">About us</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main id="homework-container">
-      <section>
-        <ul class="products">
-          <li class="card">
-            <h2>Laptop</h2>
-            <p>Powerful computer for work and study.</p>
-            <button>Buy</button>
-          </li>
 
-          <li class="card">
-            <h2>Phone</h2>
-            <p>Modern smartphone with a great camera.</p>
-            <button>Buy</button>
-          </li>
-
-          <li class="card">
-            <h2>Headphones</h2>
-            <p>Wireless headphones with clear sound.</p>
-            <button>Buy</button>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <div class="pricing">
-          <div class="pricing-card">
-            <h2>Basic</h2>
-            <p class="price">$10</p>
-            <ul class="features">
-              <li>1 User</li>
-              <li>5GB Storage</li>
-              <li>Basic Support</li>
-            </ul>
-            <button>Select Basic</button>
-          </div>
-
-          <div class="pricing-card">
-            <h2>Pro</h2>
-            <p class="price">$20</p>
-            <ul class="features">
-              <li>5 Users</li>
-              <li>50GB Storage</li>
-              <li>Priority Support</li>
-            </ul>
-            <button>Select Pro</button>
-          </div>
-
-          <div class="pricing-card">
-            <h2>Premium</h2>
-            <p class="price">$50</p>
-            <ul class="features">
-              <li>Unlimited Users</li>
-              <li>500GB Storage</li>
-              <li>24/7 Dedicated Support</li>
-            </ul>
-            <button>Select Premium</button>
-          </div>
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Virtual healthcare Saviour for you</h1>
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+          <button class="btn btn--primary">Consult today</button>
         </div>
-      </section>
-      <section id="task-1-recipe" class="recipe">
-        <h1 class="recipe-title">Chocolate Cake Recipe</h1>
-
-        <p class="recipe-description">
-          A simple and delicious dessert that everyone will enjoy.
-        </p>
-
-        <h2 class="recipe-subtitle">Ingredients</h2>
-        <ul class="recipe-ingredients-list">
-          <li class="ingredient-item">Flour</li>
-          <li class="ingredient-item">Sugar</li>
-          <li class="ingredient-item">Chocolate</li>
-          <li class="ingredient-item">Eggs</li>
-        </ul>
-
-        <img class="card-image" src="F5F.svg" alt="remmoved-gap--image" />
-
-        <h2 class="recipe-subtitle">Preparation Steps</h2>
-        <ol class="recipe-preparation-list">
-          <li class="step-item">Mix all ingredients together.</li>
-          <li class="step-item">Bake the cake for 40 minutes.</li>
-          <li class="step-item">Let it cool before serving.</li>
-        </ol>
-
-        <button class="btn btn-save" type="button">Save Recipe</button>
-        <div class="linkholder">
-          <a class="actions" href="#">Print</a>
-          <a class="actions" href="#">Share</a>
-          <a class="actions" href="#">Download</a>
+        <div class="hero__image-wrapper">
+          <img
+            src="hero-image.png"
+            alt="Virtual Healthcare Illustration"
+            class="hero__image"
+          />
         </div>
       </section>
 
-      <section id="task-2-box-sizing">
-        <div class="content-box">Content Box</div>
+      <section class="services">
+        <div class="services__header">
+          <h2 class="services__title">Services we Offer</h2>
+          <p class="services__description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+        </div>
 
-        <div class="border-box">Border Box</div>
-      </section>
+        <div class="services__grid">
+          <article class="service-card">
+            <img
+              src="search-doctor.svg"
+              alt="Search icon"
+              class="service-card__icon"
+            />
+            <h3 class="service-card__title">Search doctor</h3>
+            <p class="service-card__description">
+              Choose your doctor from thousands of specialist, general, and
+              trusted hospitals
+            </p>
+          </article>
 
-      <section id="task-3-percentage-width">
-        <ul class="list">
-          <li class="item">HTML</li>
-          <li class="item">CSS</li>
-          <li class="item">javascript</li>
-          <li class="item">typescript</li>
-        </ul>
-      </section>
+          <article class="service-card">
+            <img
+              src="online-pharmcy.svg"
+              alt="Pharmacy icon"
+              class="service-card__icon"
+            />
+            <h3 class="service-card__title">Online pharmacy</h3>
+            <p class="service-card__description">
+              Buy your medicines with our mobile application with a simple
+              delivery system
+            </p>
+          </article>
 
-      <section id="task-4-membership" class="membership-card">
-        <h2 class="plan-title">Premium Plan</h2>
+          <article class="service-card">
+            <img
+              src="conslation.svg"
+              alt="Consultation icon"
+              class="service-card__icon"
+            />
+            <h3 class="service-card__title">Consultation</h3>
+            <p class="service-card__description">
+              Free consultation with our trusted doctors and get the best
+              recommendations
+            </p>
+          </article>
 
-        <p class="price plan-price">$49/month</p>
+          <article class="service-card">
+            <img
+              src="detailes.svg"
+              alt="Details icon"
+              class="service-card__icon"
+            />
+            <h3 class="service-card__title">Details info</h3>
+            <p class="service-card__description">
+              Free consultation with our trusted doctors and get the best
+              recommendations
+            </p>
+          </article>
 
-        <p class="plan-description">
-          Full gym access, fitness classes, and personal training support.
-        </p>
+          <article class="service-card">
+            <img
+              src="emargncy-care.svg"
+              alt="Emergency icon"
+              class="service-card__icon"
+            />
+            <h3 class="service-card__title">Emergency care</h3>
+            <p class="service-card__description">
+              You can get 24/7 urgent care for yourself or your children and
+              your lovely family
+            </p>
+          </article>
 
-        <ul class="plan-features-list">
-          <li class="feature-item">Gym equipment access</li>
-          <li class="feature-item">Group classes</li>
-          <li class="feature-item">Workout plan</li>
-          <li class="feature-item">Nutrition tips</li>
-        </ul>
+          <article class="service-card">
+            <img
+              src="tracting.svg"
+              alt="Tracking icon"
+              class="service-card__icon"
+            />
+            <h3 class="service-card__title">Tracking</h3>
+            <p class="service-card__description">
+              Track and save your medical history and health data
+            </p>
+          </article>
+        </div>
 
-        <button class="btn btn-join" type="button">Join Now</button>
-      </section>
-
-      <section id="task-5-margin-collapse-siblings">
-        <div class="parent">
-          <div class="first-box">First box</div>
-
-          <div class="second-box">Second box</div>
+        <div class="services__actions">
+          <button class="btn btn--outline">Learn more</button>
         </div>
       </section>
 
-      <section id="task-6-margin-collapse-parent">
-        <div class="parent">
-          <div class="child">Child element</div>
+      <section class="feature">
+        <div class="feature__image-wrapper">
+          <img
+            src="health-provider.png"
+            alt="Leading healthcare providers illustration"
+            class="feature__image"
+          />
+        </div>
+        <div class="feature__content">
+          <h2 class="feature__title">Leading healthcare providers</h2>
+          <p class="feature__description">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone. To us, it’s not just
+            work. We take pride in the solutions we deliver.
+          </p>
+          <button class="btn btn--outline">Learn more</button>
         </div>
       </section>
     </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <div class="footer__brand-col">
+          <div class="footer__logo-group">
+            <img
+              src="logo.svg"
+              alt="Saviour Care Logo"
+              class="footer__logo-img"
+            />
+            <span class="footer__brand-name">Saviour Care</span>
+          </div>
+          <p class="footer__brand-description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+          <p class="footer__copyright">©AK PVT LTD 2021. All rights reserved</p>
+        </div>
+
+        <div class="footer__links-col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="#header">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Find a doctor</a></li>
+            <li><a href="#">Apps</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
